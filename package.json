@@ -1,0 +1,12 @@
+{
+  "name": "mk-mongoose-publisher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "maxbryselbout <max@maxken.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.13"
+  }
+}
