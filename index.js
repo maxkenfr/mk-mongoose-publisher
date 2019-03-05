@@ -76,6 +76,15 @@ function publisherPlugin(schema, options = {}) {
         return this;
     };
 
+    schema.statics.clearPublisherFields = function(unclear){
+        return _.omit(unclear, [
+            '_p',
+            'draftPublished',
+            'version',
+            'publishedVersion'
+        ])
+    };
+
     async function preMiddleware() {
         if(this.collection && this.getOptions && !!this.getOptions().published){
             this.collection(PublishedModel.collection);
