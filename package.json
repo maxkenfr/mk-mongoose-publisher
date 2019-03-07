@@ -1,6 +1,6 @@
 {
   "name": "mk-mongoose-publisher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "author": "maxbryselbout <max@maxken.fr>",
   "license": "MIT",

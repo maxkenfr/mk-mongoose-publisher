@@ -76,6 +76,8 @@ function publisherPlugin(schema, options = {}) {
         return this;
     };
 
+    schema.statics.Published = PublishedModel;
+
     schema.statics.clearPublisherFields = function(unclear){
         return _.omit(unclear, [
             '_p',
